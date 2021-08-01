@@ -21,8 +21,8 @@ public abstract class Shape {
 
         this.width = randomRange(10, 30);
         this.height = this.width;
-        this.x = randomRange(0, 400) - this.width;
-        this.y = randomRange(0, 400) - this.height;
+        this.x = randomRange(0, 400 - this.width);
+        this.y = randomRange(0, 400- this.height);
         this.color = new Color(randomRange(0, 255), randomRange(0, 255), randomRange(0, 255));
         this.directionX = 'R';
         this.directionY = 'D';

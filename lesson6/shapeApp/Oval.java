@@ -12,7 +12,7 @@ public class Oval extends Shape{
    /** construct for Oval class */
    public Oval(){
       height = width * 4;
-      y = randomRange(0, 400) - height;
+      y = randomRange(0, 400  - height);
    
    }
 

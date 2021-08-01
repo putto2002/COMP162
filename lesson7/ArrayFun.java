@@ -2,13 +2,13 @@ import java.util.Random;
 import java.util.Arrays;
 /**
 * ArrayFun represents an array, its properties and behaviours*/
-public class ArrayFun implements ArrayMethodsInterface<ArrayFun>{
+public class ArrayFun implements ArrayMethodsInterface<ArrayFun>, Comparable<ArrayFun>{
 
    private int[] integers;
 
 /** Default constructor for ArrayFun*/
    public ArrayFun(){
-      int length = randomRange(10, 100);
+      int length = randomRange(3, 6);
       integers = new int[length];
       for (int i = 0; i < integers.length; i ++){
          integers[i] = randomRange(0, length);
@@ -160,6 +160,11 @@ public class ArrayFun implements ArrayMethodsInterface<ArrayFun>{
      }
     }
     return index;
+   }
+   
+   @Override
+   public int compareTo(ArrayFun arrFun){
+      return  this.getNumElements() - arrFun.getNumElements();
    }
 
 

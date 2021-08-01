@@ -13,8 +13,8 @@ public class Smiley extends Shape{
  public Smiley(){
    width = 30;
    height = 30;
-   x = randomRange(0, 400) - width/2;
-   y = randomRange(0, 400) - height/2;
+   x = randomRange(0, 400  - width);
+   y = randomRange(0, 400  - height);
  }
 
  /** display medthod is inherited from Shape (abstract) class.
