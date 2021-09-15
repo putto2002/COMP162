@@ -115,6 +115,8 @@ public class TableauApp {
             int decrement = 0;
          
                 if(!(length <= 1)){
+
+                    // loop through each row in column j
                     for(int i = 0; i < length; i++){
                         int curInt = t[i][j];
                         if(curInt < prevInt){
@@ -122,7 +124,7 @@ public class TableauApp {
                         }
 
                         // check if the current row expands to the next column
-                        if((t[i].length - i) <= 1){
+                        if((t[i].length - i <= j) ){
                             decrement++;
                         }
                         prevInt = curInt;
