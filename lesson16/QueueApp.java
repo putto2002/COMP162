@@ -41,9 +41,17 @@ public class QueueApp {
                     System.out.println(queue.toString());
                     break;
                 case "g":
+                    if(queue.isEmpty()){
+                     System.out.println("Queue is empty!");
+                     break;
+                    }
                     System.out.println(queue.peek());
                     break;
                 case "r":
+                    if(queue.isEmpty()) {
+                     System.out.println("Queue is empty!");
+                     break;
+                    }
                     System.out.println(queue.remove());
                     break;
                 case "c":
